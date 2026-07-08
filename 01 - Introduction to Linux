@@ -1,0 +1,73 @@
+## What is Linux?
+
+Linux is a free and open-source operating system that manages computer hardware and software resources. It acts as a bridge between the user and the hardware, allowing programs and applications to run efficiently.
+
+Unlike Windows and macOS, Linux is highly customizable, secure, and widely used for servers, cloud computing, and software development.
+
+---
+
+## Why is Linux Important?
+
+Linux powers most of the world's servers and cloud platforms. It is trusted because it is:
+
+* Stable and reliable
+* Secure
+* Fast and lightweight
+* Open source
+* Suitable for automation
+* Cost-effective
+
+For these reasons, Linux is the preferred operating system for DevOps engineers.
+
+---
+
+## Where is Linux Used?
+
+Linux is used in many real-world environments, including:
+
+* Web servers
+* Cloud platforms such as AWS, Azure, and Google Cloud
+* Docker containers
+* Kubernetes clusters
+* DevOps automation
+* Android devices
+* Supercomputers
+
+---
+
+## Common Linux Distributions
+
+A Linux distribution (also called a distro) is a version of Linux that includes the Linux kernel along with additional software and tools.
+
+Popular distributions include:
+
+* Ubuntu
+* Debian
+* Red Hat Enterprise Linux (RHEL)
+* Rocky Linux
+* AlmaLinux
+* CentOS Stream
+
+Each distribution is designed for different use cases, but they all share the same Linux foundation.
+
+---
+
+## Why Should a DevOps Engineer Learn Linux?
+
+Most production applications are deployed on Linux servers. A DevOps engineer uses Linux to:
+
+* Manage servers
+* Deploy applications
+* Configure web servers
+* Write shell scripts
+* Schedule automated tasks
+* Monitor system performance
+* Troubleshoot production issues
+
+Learning Linux is one of the most important skills for a DevOps career.
+
+---
+
+## Summary
+
+Linux is a powerful, secure, and reliable operating system that forms the foundation of modern cloud computing and DevOps. Understanding Linux fundamentals is the first step toward becoming a successful DevOps engineer.
