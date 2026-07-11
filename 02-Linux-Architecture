@@ -1,0 +1,139 @@
+# 02 - Linux Architecture
+
+## What is Linux Architecture?
+
+Linux architecture describes how different components of the operating system work together to allow users to interact with computer hardware.
+
+It consists of four main layers:
+
+1. User
+2. Shell
+3. Kernel
+4. Hardware
+
+---
+
+## Linux Architecture Diagram
+
+```text
++----------------------+
+|        User          |
++----------------------+
+           |
+           v
++----------------------+
+|        Shell         |
++----------------------+
+           |
+           v
++----------------------+
+|       Kernel         |
++----------------------+
+           |
+           v
++----------------------+
+|      Hardware        |
++----------------------+
+```
+
+---
+
+## 1. User
+
+The user is the person who interacts with the Linux operating system.
+
+Examples:
+
+* System Administrator
+* DevOps Engineer
+* Developer
+
+The user gives commands such as:
+
+```bash
+ls
+pwd
+mkdir
+```
+
+---
+
+## 2. Shell
+
+The shell is a command-line interpreter.
+
+It receives commands from the user, interprets them, and sends requests to the kernel.
+
+Popular Linux shells include:
+
+* Bash
+* Zsh
+* Fish
+
+Example:
+
+```bash
+ls -l
+```
+
+The shell processes this command before passing it to the kernel.
+
+---
+
+## 3. Kernel
+
+The kernel is the core of the Linux operating system.
+
+It communicates directly with the hardware and manages system resources.
+
+Responsibilities include:
+
+* Process management
+* Memory management
+* File system management
+* Device management
+* CPU scheduling
+* Network communication
+
+The kernel is the bridge between software and hardware.
+
+---
+
+## 4. Hardware
+
+Hardware refers to the physical components of the computer.
+
+Examples:
+
+* CPU
+* RAM
+* Hard Disk / SSD
+* Keyboard
+* Mouse
+* Network Card
+
+The kernel controls how software interacts with these devices.
+
+---
+
+## How Linux Works
+
+Suppose you run the following command:
+
+```bash
+mkdir project
+```
+
+The process is:
+
+1. The user enters the command.
+2. The shell interprets the command.
+3. The shell sends a request to the kernel.
+4. The kernel creates the directory on the hard disk.
+5. The shell displays the result to the user.
+
+---
+
+## Summary
+
+Linux architecture follows a layered design where the user interacts with the shell, the shell communicates with the kernel, and the kernel manages the hardware. Understanding these layers is essential for Linux administration and DevOps.
