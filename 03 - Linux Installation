@@ -1,0 +1,149 @@
+# 03 - Linux Installation
+
+## Overview
+
+Before working with Linux, you need a way to install or access it. There are several methods depending on your learning goals and environment.
+
+This section covers the most common ways to use Linux for DevOps.
+
+---
+
+## Method 1: Install Linux on a Virtual Machine (Recommended for Beginners)
+
+A virtual machine (VM) allows you to run Linux inside your existing Windows or macOS system without affecting your main operating system.
+
+### Software Required
+
+* VirtualBox or VMware Workstation
+* Ubuntu Server ISO (or another Linux distribution)
+
+### Steps
+
+1. Install VirtualBox or VMware.
+2. Download the Ubuntu Server ISO.
+3. Create a new virtual machine.
+4. Allocate CPU, RAM, and storage.
+5. Mount the Ubuntu ISO.
+6. Start the virtual machine.
+7. Follow the installation wizard.
+8. Log in with the user account you created.
+
+### Advantages
+
+* Safe for learning
+* Easy to reset
+* No changes to your main operating system
+
+---
+
+## Method 2: Install Linux Using Windows Subsystem for Linux (WSL)
+
+Windows Subsystem for Linux (WSL) allows you to run Linux directly on Windows without using a virtual machine.
+
+### Steps
+
+1. Enable WSL.
+2. Install Ubuntu from the Microsoft Store.
+3. Launch Ubuntu.
+4. Create a username and password.
+5. Start using Linux commands.
+
+### Advantages
+
+* Lightweight
+* Fast startup
+* Great for development and scripting
+
+---
+
+## Method 3: Install Linux on Physical Hardware
+
+You can install Linux directly on a computer or laptop.
+
+### Steps
+
+1. Download a Linux ISO.
+2. Create a bootable USB drive.
+3. Boot from the USB drive.
+4. Follow the installation process.
+5. Restart and log in.
+
+### Advantages
+
+* Best performance
+* Full access to hardware
+
+---
+
+## Method 4: Launch a Linux Server on AWS EC2
+
+Cloud servers are commonly used in DevOps.
+
+### Steps
+
+1. Sign in to AWS.
+2. Launch an EC2 instance.
+3. Choose Ubuntu or Amazon Linux.
+4. Create or select a key pair.
+5. Configure the security group.
+6. Launch the instance.
+7. Connect using SSH.
+
+### Advantages
+
+* Real cloud environment
+* Industry-standard practice
+* Learn remote server management
+
+---
+
+## Accessing a Linux Server
+
+Once Linux is installed, you can access it using:
+
+* Local terminal
+* Virtual machine console
+* SSH from another computer
+* Cloud provider console (such as AWS EC2)
+
+Example SSH command:
+
+```bash
+ssh username@server-ip
+```
+
+---
+
+## Verify the Installation
+
+Run the following commands to confirm your Linux environment is working:
+
+```bash
+pwd
+whoami
+hostname
+uname -a
+```
+
+These commands display:
+
+* Current directory
+* Current user
+* Hostname
+* Linux kernel information
+
+---
+
+## Best Practices
+
+* Keep your system updated.
+* Use a strong password.
+* Create a non-root user for daily work.
+* Learn keyboard shortcuts and terminal navigation.
+* Practice Linux commands every day.
+
+---
+
+## Summary
+
+Linux can be installed in multiple ways, including virtual machines, WSL, physical hardware, and cloud servers. For beginners, a virtual machine or WSL is a great starting point, while AWS EC2 provides experience with real production-like environments.
