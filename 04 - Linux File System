@@ -1,0 +1,286 @@
+# 04 - Linux File System
+
+## What is a Linux File System?
+
+A Linux file system is the way Linux organizes and stores files and directories.
+
+Unlike Windows, Linux uses a single directory structure that starts from the root directory (`/`).
+
+Everything in Linux is treated as a file, including devices, processes, and configuration files.
+
+---
+
+## Linux Directory Structure
+
+```text
+/
+├── bin
+├── boot
+├── dev
+├── etc
+├── home
+├── lib
+├── media
+├── mnt
+├── opt
+├── proc
+├── root
+├── run
+├── srv
+├── sys
+├── tmp
+├── usr
+└── var
+```
+
+---
+
+## Root Directory (/)
+
+The root directory is the top-level directory in Linux.
+
+All files and directories originate from this location.
+
+Example:
+
+```bash
+cd /
+```
+
+---
+
+## /home
+
+Contains personal files and directories for normal users.
+
+Example:
+
+```text
+/home/shivendra
+```
+
+Common files:
+
+* Documents
+* Downloads
+* Pictures
+* Projects
+
+---
+
+## /root
+
+Home directory of the root user (administrator).
+
+Example:
+
+```text
+/root
+```
+
+Only the root user has full access.
+
+---
+
+## /etc
+
+Stores system configuration files.
+
+Examples:
+
+```text
+/etc/passwd
+/etc/hosts
+/etc/ssh/sshd_config
+```
+
+DevOps engineers frequently work with this directory.
+
+---
+
+## /bin
+
+Contains essential user commands.
+
+Examples:
+
+```bash
+ls
+cp
+mv
+cat
+mkdir
+```
+
+These commands are available even in recovery mode.
+
+---
+
+## /usr
+
+Contains user applications and software packages.
+
+Examples:
+
+```text
+/usr/bin
+/usr/lib
+/usr/share
+```
+
+Most installed applications are stored here.
+
+---
+
+## /var
+
+Stores data that changes frequently.
+
+Examples:
+
+```text
+/var/log
+/var/spool
+/var/cache
+```
+
+Important for troubleshooting and log analysis.
+
+---
+
+## /tmp
+
+Used for temporary files.
+
+Example:
+
+```text
+/tmp
+```
+
+Files here may be removed automatically after a reboot.
+
+---
+
+## /boot
+
+Contains files required during system startup.
+
+Examples:
+
+```text
+Kernel files
+Boot loader files
+```
+
+Important for the boot process.
+
+---
+
+## /dev
+
+Contains device files.
+
+Examples:
+
+```text
+/dev/sda
+/dev/null
+/dev/tty
+```
+
+Linux treats hardware devices as files.
+
+---
+
+## /proc
+
+A virtual file system containing information about running processes and system resources.
+
+Example:
+
+```text
+/proc/cpuinfo
+/proc/meminfo
+```
+
+Useful for monitoring system information.
+
+---
+
+## /opt
+
+Used for optional or third-party software installations.
+
+Examples:
+
+```text
+/opt/tomcat
+/opt/custom-app
+```
+
+---
+
+## /mnt and /media
+
+Used for mounting storage devices.
+
+Examples:
+
+```text
+/mnt
+/media
+```
+
+Commonly used for USB drives and external disks.
+
+---
+
+## Useful Commands
+
+Display current directory:
+
+```bash
+pwd
+```
+
+List files and directories:
+
+```bash
+ls
+```
+
+Move between directories:
+
+```bash
+cd
+```
+
+View directory structure:
+
+```bash
+tree
+```
+
+---
+
+## Real-World Example
+
+Suppose an application is not working.
+
+A DevOps engineer might check:
+
+```text
+Application logs → /var/log
+Configuration files → /etc
+Application files → /opt
+User files → /home
+```
+
+Understanding the Linux file system helps quickly locate and troubleshoot issues.
+
+---
+
+## Summary
+
+The Linux file system starts from the root directory (/). Important directories such as /home, /etc, /var, /usr, and /opt store user data, configurations, logs, and applications. Knowing these directories is essential for Linux administration and DevOps tasks.
